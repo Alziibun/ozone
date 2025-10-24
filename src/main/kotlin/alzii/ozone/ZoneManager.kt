@@ -1,7 +1,7 @@
 package alzii.ozone
 
 object ZoneManager {
-    val zones = mutableListOf<Zone>()
+    val zones: MutableList<in Zone> = mutableListOf()
 
     fun add(zone: Zone) {
         zones.add(zone)
